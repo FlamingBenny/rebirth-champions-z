@@ -3,7 +3,7 @@ _G.autohatch = false
 _G.autorebirth = false
 _G.autochest = false
 _G.autocraft = false
-_G.autopotion = false -- WARNING: enabling this can spend all your clicks if you have over 5 sx clicks
+_G.autopotion = false -- enabling this can spend all your clicks if you have over atleast 2 O clicks
 _G.autoindex = false
 _G.WorldBoost = true
 _G.autopetmachine = false
@@ -13,7 +13,7 @@ NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
  Title = "Welcome";
- Text = "configure settings in your script editor or executor";
+ Text = "enjoy and read info for more";
  Icon = "";
  Duration = 5;
  Callback = NotificationBindable;
@@ -24,14 +24,6 @@ NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
  Title = "Info";
- Text = "click F9 on your keyboard to view egg names and rebirth values for settings help";
- Icon = "";
- Duration = 7;
- Callback = NotificationBindable;
-})
-
-game.StarterGui:SetCore("SendNotification",  {
- Title = "Info 2";
  Text = "When you choose an option for either rebirths of eggs, enable it first then choose or it wont work";
  Icon = "";
  Duration = 13;
